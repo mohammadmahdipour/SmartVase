@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/led_bg2"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".LedActivity">
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="sendChannel1"
+        android:text="send a high priority notification"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="sendOnChannel2"
+        android:text="send a simple notification"
+        app:layout_constraintBottom_toTopOf="@+id/button" />
+    <!--<ToggleButton
+        android:id="@+id/switchbtn"
+        android:layout_width="110dp"
+        android:layout_height="90dp"
+        android:background="@drawable/tbutton"
+        android:text=""
+        android:textOff=""
+        android:textOn=""
+        android:layout_marginBottom="45dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+         /> -->
+
+    <Switch
+        android:id="@+id/switch2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:scrollbarSize="40dp"
+        android:text="LED  "
+        style="@android:style/Widget.Material.CompoundButton.Switch"
+        android:textSize="30sp"
+        android:textColor="#fff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

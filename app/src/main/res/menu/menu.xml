@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_View">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/Nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Home" />
+        <item
+            android:id="@+id/Nav_aboutapp"
+            android:icon="@drawable/ic_info_outline_black_24dp"
+            android:title="about" />
+        <item
+            android:id="@+id/Nav_seting"
+            android:icon="@drawable/ic_info_outline_black_24dp"
+            android:title="about" />
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item android:title="profile">
+            <menu>
+                <item
+                    android:id="@+id/Nav_aboutiot"
+                    android:icon="@drawable/ic_info_outline_black_24dp"
+                    android:title="about IOT group" />
+                <item
+                    android:id="@+id/Nav_rateUs"
+                    android:icon="@drawable/ic_thumb_up_black_24dp"
+                    android:title="about IOT group" />
+
+            </menu>
+        </item>
+
+
+    </group>
+
+    <item android:title="communicate">
+        <menu>
+            <item
+                android:id="@+id/Nav_share"
+                android:icon="@drawable/ic_share_black_24dp"
+                android:title="about IOT group" />
+            <item
+                android:id="@+id/Nav_rateUs2"
+                android:icon="@drawable/ic_thumb_up_black_24dp"
+                android:title="about IOT group" />
+        </menu>
+    </item>
+</menu>
